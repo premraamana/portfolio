@@ -85,6 +85,23 @@ a:hover {
   margin-right: 4px;
   overflow: hidden;
 }
+#hero {
+  background-image: url('assets/img/4.jpg'); /* Ensure the path is correct */
+  background-size: cover; /* Make sure the image covers the section */
+  background-position: 14% center; /* Adjust the horizontal position slightly */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+}
+
+/* Additional styles to improve appearance on mobile screens */
+@media (max-width: 767px) {
+  #hero {
+      height: auto; /* Allow the height to adjust based on content */
+      min-height: 100vh; /* Ensure the section still takes full viewport height */
+  }
+}
+
 
 .bg-image {
   background-repeat: no-repeat;
